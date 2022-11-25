@@ -25,6 +25,7 @@ func startWorker(workerNum int, in <-chan string) {
 	}
 	printFinishWork(workerNum)
 }
+
 func workerPull() {
 	worketInput := make(chan string, 2) // попробуйте увеличить размер канала
 
